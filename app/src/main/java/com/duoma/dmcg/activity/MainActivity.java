@@ -58,10 +58,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         E_Log("MainActivity-onCreate");
 
         initUI();
-
-
-
-
     }
 
     /**
