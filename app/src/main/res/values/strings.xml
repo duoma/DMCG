@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">DMCG</string>
+
+    <string name="main_tab_1">首页</string>
+    <string name="main_tab_2">消息</string>
+    <string name="main_tab_3">出售服务</string>
+    <string name="main_tab_4">我的</string>
+
+</resources>

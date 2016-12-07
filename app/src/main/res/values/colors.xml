@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--Acitonbar颜色-->
+    <color name="colorPrimary">#ff8903</color><!--toolbar背景颜色-->
+    <color name="colorPrimaryDark">#ff8903</color><!--状态栏背景颜色-->
+    <color name="colorAccent">#FF4081</color>
+
+    <!--应用字体颜色-->
+    <color name="colorTextWhite">#FFFFFF</color><!--文本颜色(白)-->
+    <color name="colorTextBlack">#000000</color><!--文本颜色(黑)-->
+    <color name="colorTextGray">#cdcdcd</color><!--文本颜色（灰）-->
+    <color name="colorTextTab">#898989</color><!--文本颜色（tab）-->
+
+    <!--应用控件颜色-->
+    <color name="lay_back_gray">#cdcdcd</color><!--背景颜色（灰）-->
+    <color name="lay_back_White">#FFFFFF</color><!--背景颜色(白)-->
+    <color name="lay_back_Black">#000000</color><!--背景颜色(黑)-->
+
+    <!--微信小程序字体颜色-->
+    <color name="wx_sp_text_light">#B2B2B2</color><!--时间戳与表单缺省值 Light 灰色-->
+    <color name="wx_sp_text_gray">#888888</color><!--次要内容 Grey 灰色-->
+    <color name="wx_sp_text_semi">#353535</color><!--大段的说明内容而且属于主要内容用 Semi 黑-->
+    <color name="wx_sp_text_black">#000000</color><!--主内容 Black 黑色-->
+
+    <color name="wx_sp_text_green">#09BB07</color><!--绿色为完成字样色-->
+    <color name="wx_sp_text_blue">#576B95</color><!--蓝色为链接用色-->
+    <color name="wx_sp_text_red">#E64340</color><!--红色为出错用色 Press与 Disable状态分别降低透明度为20%与10%-->
+
+    <!--应用颜色-->
+    <color name="wx_color_standard">#564E5D</color><!--紫灰色-->
+    <color name="wx_color_specially">#DD551A</color><!--专色-->
+    <color name="wx_color_specially2">#35AB81</color><!--专色2-->
+
+    <color name="app_color_specially">#ff8903</color><!--主色调-->
+</resources>

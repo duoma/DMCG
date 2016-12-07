@@ -1,0 +1,42 @@
+<resources>
+
+    <!-- 系统样式 -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <!--主界面样式（无标题栏）-->
+    <style name="DmTheme.NoActionBar" parent="AppTheme">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <!-- 全屏样式（无标题栏 + 全屏） 开始-->
+    <style name="DmTheme.NoTitle" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowActionBar">false</item>
+        <!-- Activity全屏-->
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <!-- 开启背景设置透明-->
+        <item name="android:windowIsTranslucent">true</item>
+    </style>
+
+    <!-- 启动页样式（无标题栏 + 全屏） 开始-->
+    <style name="DmTheme.splash" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowActionBar">false</item>
+        <!-- Activity全屏-->
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <!-- 开启背景设置透明--><!--解决启动时白屏的BUG(如果设置背景图片，则把参数设置成false)-->
+        <item name="android:windowIsTranslucent">false</item>
+        <!--设置启动背景图Theme-->
+        <item name="android:background">@drawable/home_page</item>
+        <item name="android:scaleType">fitXY</item>
+
+    </style>
+
+</resources>

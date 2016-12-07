@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.duoma.dmcg.activity.MainActivity">
+
+    <include layout="@layout/content_main" />
+
+    <ImageView
+        android:id="@+id/img_main_splash"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:srcCompat="@drawable/home_page"
+        android:scaleType="fitXY"
+        tools:ignore="ContentDescription" />
+</RelativeLayout>

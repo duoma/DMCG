@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/content_main"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/lay_back_White"
+    tools:context="com.duoma.dmcg.activity.MainActivity">
+
+    <FrameLayout
+        android:id="@+id/container"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/lay_back_gray" />
+
+    <LinearLayout
+        android:id="@+id/linear_main_tab"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/main_menu_height"
+        android:orientation="horizontal"
+        tools:ignore="DisableBaselineAlignment">
+
+        <RelativeLayout
+            android:id="@+id/relative_main_1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:drawablePadding="@dimen/main_tab_img_tv_height"
+                android:drawableTop="@drawable/main_tab_1"
+                android:text="@string/main_tab_1"
+                android:textColor="@color/main_tab_text_color"
+                android:textSize="@dimen/text_sp_3x" />
+
+            <!--<TextView
+                android:id="@+id/tv_home_max"
+                android:layout_width="@dimen/mian_tab_circular_width_max"
+                android:layout_height="@dimen/mian_tab_circular_width_max"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="@dimen/mian_tab_circular_paddingRight_max"
+                android:layout_marginTop="4dip"
+                android:background="@drawable/tips_circle"
+                android:gravity="center"
+                android:text="15"
+                android:textColor="@android:color/white"
+                android:textSize="10sp"
+                android:textStyle="bold"
+                android:visibility="gone"
+                tools:ignore="HardcodedText,RtlHardcoded,SmallSp" />
+
+            <TextView
+                android:id="@+id/tv_home_min"
+                android:layout_width="@dimen/mian_tab_circular_width_min"
+                android:layout_height="@dimen/mian_tab_circular_width_min"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="@dimen/mian_tab_circular_paddingRight_min"
+                android:layout_marginTop="8dip"
+                android:background="@drawable/tips_circle"
+                android:textColor="@android:color/white"
+                android:visibility="gone"
+                tools:ignore="RtlHardcoded" />-->
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/relative_main_2"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:drawablePadding="@dimen/main_tab_img_tv_height"
+                android:drawableTop="@drawable/main_tab_2"
+                android:text="@string/main_tab_2"
+                android:textColor="@color/main_tab_text_color"
+                android:textSize="@dimen/text_sp_3x" />
+
+            <!--<TextView
+                android:id="@+id/tv_im_max"
+                android:layout_width="@dimen/mian_tab_circular_width_max"
+                android:layout_height="@dimen/mian_tab_circular_width_max"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="@dimen/mian_tab_circular_paddingRight_max"
+                android:layout_marginTop="4dip"
+                android:background="@drawable/tips_circle"
+                android:gravity="center"
+                android:text="15"
+                android:textColor="@android:color/white"
+                android:textSize="10sp"
+                android:textStyle="bold"
+                android:visibility="gone"
+                tools:ignore="HardcodedText,RtlHardcoded,SmallSp" />
+
+            <TextView
+                android:id="@+id/tv_im_min"
+                android:layout_width="@dimen/mian_tab_circular_width_min"
+                android:layout_height="@dimen/mian_tab_circular_width_min"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="@dimen/mian_tab_circular_paddingRight_min"
+                android:layout_marginTop="8dip"
+                android:background="@drawable/tips_circle"
+                android:textColor="@android:color/white"
+                android:visibility="gone"
+                tools:ignore="RtlHardcoded" />-->
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/relative_main_3"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:drawablePadding="@dimen/main_tab_img_tv_height"
+                android:drawableTop="@drawable/main_tab_3"
+                android:text="@string/main_tab_3"
+                android:textColor="@color/main_tab_text_color"
+                android:textSize="@dimen/text_sp_3x" />
+
+            <!--<TextView
+                android:id="@+id/tv_services_max"
+                android:layout_width="@dimen/mian_tab_circular_width_max"
+                android:layout_height="@dimen/mian_tab_circular_width_max"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="@dimen/mian_tab_circular_paddingRight_max"
+                android:layout_marginTop="4dip"
+                android:background="@drawable/tips_circle"
+                android:gravity="center"
+                android:text="15"
+                android:textColor="@android:color/white"
+                android:textSize="10sp"
+                android:textStyle="bold"
+                android:visibility="gone"
+                tools:ignore="HardcodedText,RtlHardcoded,SmallSp" />
+
+            <TextView
+                android:id="@+id/tv_services_min"
+                android:layout_width="@dimen/mian_tab_circular_width_min"
+                android:layout_height="@dimen/mian_tab_circular_width_min"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="@dimen/mian_tab_circular_paddingRight_min"
+                android:layout_marginTop="8dip"
+                android:background="@drawable/tips_circle"
+                android:textColor="@android:color/white"
+                android:visibility="gone"
+                tools:ignore="RtlHardcoded" />-->
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/relative_main_4"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:drawablePadding="@dimen/main_tab_img_tv_height"
+                android:drawableTop="@drawable/main_tab_4"
+                android:text="@string/main_tab_4"
+                android:textColor="@color/main_tab_text_color"
+                android:textSize="@dimen/text_sp_3x" />
+
+            <!--<TextView
+                android:id="@+id/tv_my_max"
+                android:layout_width="@dimen/mian_tab_circular_width_max"
+                android:layout_height="@dimen/mian_tab_circular_width_max"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="@dimen/mian_tab_circular_paddingRight_max"
+                android:layout_marginTop="4dip"
+                android:background="@drawable/tips_circle"
+                android:gravity="center"
+                android:text="15"
+                android:textColor="@android:color/white"
+                android:textSize="10sp"
+                android:textStyle="bold"
+                android:visibility="gone"
+                tools:ignore="HardcodedText,RtlHardcoded,SmallSp" />
+
+            <TextView
+                android:id="@+id/tv_my_min"
+                android:layout_width="@dimen/mian_tab_circular_width_min"
+                android:layout_height="@dimen/mian_tab_circular_width_min"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="@dimen/mian_tab_circular_paddingRight_min"
+                android:layout_marginTop="8dip"
+                android:background="@drawable/tips_circle"
+                android:textColor="@android:color/white"
+                android:visibility="gone"
+                tools:ignore="RtlHardcoded" />-->
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>
