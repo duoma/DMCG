@@ -13,7 +13,6 @@ import com.umeng.analytics.MobclickAgent;
  */
 
 public class EXApplication extends Application {
-    private static final String TAG = "DMCGTag";
     private Context context;
     public static int tabsIndex = 0;//Tabs点击了哪个标签
 
@@ -31,7 +30,7 @@ public class EXApplication extends Application {
     @Override
     public void onCreate() {
         super.onCreate();
-        Log.e(TAG, "EXApplication-onCreate()");
+        E_Log("EXApplication-onCreate()");
 
         context = getApplicationContext();
 
