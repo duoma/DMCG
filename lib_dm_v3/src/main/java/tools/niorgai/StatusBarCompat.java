@@ -52,7 +52,7 @@ public class StatusBarCompat {
      * change to full screen mode
      * @param hideStatusBarBackground hide status bar alpha Background when SDK > 21, true if hide it
      */
-    private static void translucentStatusBar(@NonNull Activity activity, boolean hideStatusBarBackground) {
+    public static void translucentStatusBar(@NonNull Activity activity, boolean hideStatusBarBackground) {
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
             StatusBarCompatLollipop.translucentStatusBar(activity, hideStatusBarBackground);
         } else if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.KITKAT) {

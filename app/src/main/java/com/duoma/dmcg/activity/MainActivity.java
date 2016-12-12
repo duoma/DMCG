@@ -8,8 +8,11 @@ import android.os.Handler;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentTransaction;
 import android.support.v7.app.AppCompatActivity;
+import android.util.Log;
 import android.view.KeyEvent;
+import android.view.Menu;
 import android.view.View;
+import android.view.Window;
 import android.widget.RelativeLayout;
 import android.widget.Toast;
 
@@ -20,6 +23,7 @@ import com.duoma.dmcg.fragment.Tab3Fragment;
 import com.duoma.dmcg.fragment.Tab4Fragment;
 import com.umeng.analytics.MobclickAgent;
 
+import java.lang.reflect.Method;
 import java.util.HashMap;
 
 import static com.duoma.dmcg.app.EXApplication.E_Log;
@@ -64,6 +68,21 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
      * 初始化控件
      */
     private void initUI() {
+
+        /**
+         * 顶部状态栏 开始
+         */
+        /*RelativeLayout activity_main = (RelativeLayout) findViewById(R.id.activity_main);
+
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.JELLY_BEAN) {
+//            StatusBarCompat.translucentStatusBar(MainActivity.this, true);//设置状态栏透明
+            //Activity全屏显示，但状态栏不会被隐藏覆盖，状态栏依然可见，Activity顶端布局部分会被状态遮住。
+//            activity_main.setSystemUiVisibility(View.SYSTEM_UI_FLAG_LAYOUT_FULLSCREEN);
+        }*/
+        /**
+         * 顶部状态栏 结束
+         */
+
         /**
          * 主界面和底部菜单栏 开始（要放在Toolbar 开始 之前）
          */
@@ -96,6 +115,14 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         /**
          * 主界面和底部菜单栏 结束
          */
+
+        /*final ImageView img_splash = (ImageView) findViewById(R.id.img_main_splash);
+        mHandler.postDelayed(new Runnable() {
+            @Override
+            public void run() {
+                img_splash.setVisibility(View.GONE);
+            }
+        },3000);*/
     }
     /*@Override
     public void onCreateCustomToolBar(Toolbar toolbar) {
@@ -138,6 +165,30 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
         return super.onOptionsItemSelected(item);
     }*/
+
+    @Override
+    public boolean onMenuOpened(int featureId, Menu menu) {
+        setOverflowIconVisible(featureId, menu);
+        return super.onMenuOpened(featureId, menu);
+    }
+
+    /**
+     * 显示OverflowMenu的Icon
+     */
+    private void setOverflowIconVisible(int featureId, Menu menu) {
+        if (featureId == Window.FEATURE_ACTION_BAR && menu != null) {
+            if (menu.getClass().getSimpleName().equals("MenuBuilder")) {
+                try {
+                    Method m = menu.getClass().getDeclaredMethod(
+                            "setOptionalIconsVisible", Boolean.TYPE);
+                    m.setAccessible(true);
+                    m.invoke(menu, true);
+                } catch (Exception e) {
+                    Log.d("OverflowIconVisible", e.getMessage());
+                }
+            }
+        }
+    }
 
     @Override
     protected void onResume() {

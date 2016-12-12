@@ -8,7 +8,9 @@
         android:id="@+id/tab4_tool_bar"
         android:layout_width="match_parent"
         android:layout_height="?attr/actionBarSize"
-        android:background="?attr/colorPrimary">
+        tools:titleTextColor="@color/colorTextWhite"
+        android:background="@color/colorPrimary"
+        android:theme="@style/Theme.ToolBar.tab">
     </android.support.v7.widget.Toolbar>
 
 </FrameLayout>

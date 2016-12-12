@@ -15,5 +15,6 @@
         android:layout_height="match_parent"
         app:srcCompat="@drawable/home_page"
         android:scaleType="fitXY"
+        android:visibility="gone"
         tools:ignore="ContentDescription" />
 </RelativeLayout>

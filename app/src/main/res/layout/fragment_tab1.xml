@@ -1,14 +1,38 @@
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="com.duoma.dmcg.fragment.Tab1Fragment">
 
-    <android.support.v7.widget.Toolbar
-        android:id="@+id/tab1_tool_bar"
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="?attr/actionBarSize"
-        android:background="?attr/colorPrimary">
-    </android.support.v7.widget.Toolbar>
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:ignore="UselessParent">
 
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/tab1_tool_bar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/colorPrimary"
+            android:theme="@style/Theme.ToolBar.tab"
+            tools:titleTextColor="@color/colorTextWhite" />
+
+        <android.support.design.widget.TabLayout
+            android:id="@+id/tablayout_tab1"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/TabLayout"
+            app:tabBackground="@color/lay_back_gray"
+            app:tabIndicatorColor="@color/wx_sp_text_red"
+            app:tabMode="scrollable"
+            app:tabSelectedTextColor="@color/wx_sp_text_red"
+            app:tabTextColor="@color/wx_sp_text_black" />
+
+        <!--可滑动的布局内容-->
+        <android.support.v4.view.ViewPager
+            android:id="@+id/pager_tab1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </LinearLayout>
 </FrameLayout>
