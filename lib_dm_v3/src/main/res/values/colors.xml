@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--专色-->
+    <color name="background_tab1">#FF666666</color>
+    <color name="background_tab2">#FF96AA39</color>
+    <color name="background_tab3">#FFC74B46</color>
+    <color name="background_tab4">#FFF4842D</color>
+    <color name="background_tab5">#FF3F9FE0</color>
+    <color name="background_tab6">#FF5161BC</color>
+
+
+</resources>
